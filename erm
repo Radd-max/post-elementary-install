@@ -45,3 +45,9 @@ sudo apt install software-properties-common
  sudo add-apt-repository ppa:linrunner/tlp
  apt install tlp tlp-rdw
  tlp start
+ 
+ sudo add-apt-repository ppa:ubuntuhandbook1/apps
+sudo apt-get update
+sudo apt-get install laptop-mode-tools
+ 
+ sudo apt-get install libreoffice-gtk
