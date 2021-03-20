@@ -9,7 +9,39 @@ elementary os store installs :
 keepassxc
 aesop
 
-DNS
+DNS:
 Unbound
-stubby https://www.linuxbabe.com/ubuntu/ubuntu-stubby-dns-over-tls
+stubby  -  https://www.linuxbabe.com/ubuntu/ubuntu-stubby-dns-over-tls
 
+sudo apt update
+sudo apt install software-properties-common
+
+ apt purge epiphany-browser epiphany-browser-data
+ apt purge pantheon-mail
+ 
+ sudo add-apt-repository ppa:philip.scott/elementary-tweaks
+ apt install elementary-tweaks
+ 
+  apt install git
+  
+ apt install gobject-introspection libglib2.0-dev libgranite-dev libindicator3-dev libwingpanel-2.0-dev valac
+ git clone https://github.com/donadigo/wingpanel-indicator-namarupa
+ cd wingpanel-indicator-namarupa
+ meson build --prefix=/usr && cd build
+ ninja
+ sudo ninja install
+ apt install -f
+ wget https://github.com/mdh34/elementary-indicators/releases/download/0.1/indicator-application-patched.deb
+ sudo dpkg -i indicator-application-patched.deb
+ sudo apt-mark hold indicator-application
+ 
+  apt install ubuntu-restricted-extras
+ apt install libavcodec-extra (tab + enter )
+ apt install libdvd-pkg
+ sudo dpkg-reconfigure libdvd-pkg
+ 
+  apt install preload
+  
+ sudo add-apt-repository ppa:linrunner/tlp
+ apt install tlp tlp-rdw
+ tlp start
