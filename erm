@@ -46,8 +46,10 @@ sudo apt install software-properties-common
  apt install tlp tlp-rdw
  tlp start
  
- sudo add-apt-repository ppa:ubuntuhandbook1/apps
-sudo apt-get update
-sudo apt-get install laptop-mode-tools
- 
- sudo apt-get install libreoffice-gtk
+# sudo add-apt-repository ppa:ubuntuhandbook1/apps
+#sudo apt-get update
+#sudo apt-get install laptop-mode-tools
+# unusable on battery power 
+
+
+sudo apt-get install libreoffice-gtk
